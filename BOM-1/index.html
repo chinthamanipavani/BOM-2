@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bom-1</title>
+    <style>
+        .container {
+            border: 2px solid rgb(125, 183, 208);
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            text-align: center;
+            background-color: aliceblue;
+        }
+
+        .description {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .item {
+            border: 2px solid rgb(59, 55, 55);
+            
+            width:100%px;
+            padding: 10px;
+            margin: 10px;
+            border-radius:5px;
+        }
+
+        img {
+            width: 290px;
+            height:300px;
+        }
+
+        .option {
+            text-align: center;
+        }
+
+        .main {
+            padding: 10px;
+        }
+
+        .item {
+            background-color: white;
+
+        }
+
+        .item>button {
+            background-color: red;
+            padding: 10px;
+            color: antiquewhite;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="option">
+        <select class="main" id="main"></select><br><br>
+    </div>
+    <br><br>
+    <div class="container" id="container"></div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
